@@ -19,4 +19,4 @@ Algorithm used for predicting and get accuracy are -
 4. Logistic Regression 
 
 I completed the task successfully and made a website to predict the class using machine learning model.
-https://medium.com/@artimule1234/iris-flower-classification-using-knn-d0d4eafaf765
+blog: https://medium.com/@artimule1234/iris-flower-classification-using-knn-d0d4eafaf765
