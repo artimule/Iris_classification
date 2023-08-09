@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iris Flower Classifiaction</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/46/657/294/beautiful-iris-flowers-in-summer-blue-irises-wallpaper-preview.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%
+    }
+    .login-form-3 {
+        padding: 3%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+        background-color: #eab7e0;
+        border-radius: 1rem;
+        margin-left: 315px;
+        margin-top: 70px;
+        width : 50%;
+        text-align: center;
+        font-family: cursive
+    }
+    .input-field {
+        text-align: center;
+    }
+    .input-box {
+        width: 70%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 1rem
+    }
+</style>
+    <body>
+        <h1 align="center">
+            <font style="color: rgb(185 12 178); font-family: math; background: whitesmoke; padding: 10px; border-radius: 1rem" , size="6.7"; >
+                <b>IRIS  FLOWER  CLASSIFICATION </b>
+            </font>
+        </h1>
+        <div class="login-form-3">
+            <form action='/predict' method="POST">
+                <p class="input-field">Sepal Length : <input type='text' name='sepal_length' placeholder="Enter sepal length in cm" class="input-box"><br></p>
+                <p class="input-field">Sepal Width : <input type='text' name='sepal_width' placeholder="Enter Sepal width in cm" class="input-box"><br></p>
+                <p class="input-field">Petal Length : <input type='text' name='petal_length' placeholder="Enter petal length in cm" class="input-box"><br></p>
+                <p class="input-field">Petal Width : <input type='text' name='petal_width' placeholder="Enter petal width in cm" class="input-box"><br></p>
+                <P><input type='submit' value='Predict' style="background: darksalmon"><br></P>
+                <p class="input-field">Predicted Class: {{result}}</p>
+            </form>
+        </div>
+    </body>
+</html>
